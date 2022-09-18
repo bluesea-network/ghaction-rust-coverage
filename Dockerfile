@@ -18,6 +18,7 @@ RUN set -eux; \
         libc6-dev \
         libssl-dev \
         wget \
+        git \
         pkg-config \
         ; \
     sed -i '/pam_rootok.so$/aauth sufficient pam_permit.so' /etc/pam.d/su; \
